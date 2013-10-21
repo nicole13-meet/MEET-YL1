@@ -1,5 +1,6 @@
-raw_input("Give me a number , please :) ")
-n = int(raw_input( ))
-for n in xrange(n):
-	print n + 1
+a = raw_input("Give me a number , please :) ")
+n = int(a)
+for num in xrange(n):
+	if n % num == 0 :
+		print num + 1
 
