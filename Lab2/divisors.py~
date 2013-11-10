@@ -1,6 +1,6 @@
 a = raw_input("Give me a number , please :) ")
 n = int(a)
-for n in xrange(n):
-	if n % n == 0 :
-		print n + 1
+for num in xrange(n):
+	if n % (num+1) == 0 :
+		print (num+1)
 
