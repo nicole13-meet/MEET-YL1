@@ -1,0 +1,21 @@
+class Integer(object):
+	def __init__(self, number, parameter):
+		self.number = number
+		self.parameter = parameter
+	def display(self):
+		print self.parameter + str(self.number)
+	
+class NegativeInteger(Integer):
+	def __init__(self, number):
+		super(NegativeInteger, self).__init__(number, parameter="-" )
+	def display(self):
+		Integer.display(self)
+		print "This is an object of the NegativeInteger class"
+if __name__=="__main__":
+	z = NegativeInteger(255)
+	#z.display()
+	n = Integer(93, "+")
+	#n.display()
+	e = [n , z]
+	for o in e:
+		o.display()
